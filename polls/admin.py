@@ -6,7 +6,6 @@ from .models import Questions,Choice,Musician,Album
 admin.site.site_header="polls Admin"
 admin.site.site_title="polls Admin Area"
 admin.site.index_title="Welcome to polls Admin Area"
-admin.site.register(Musician,Album)
 
 class ChoiceInLine(admin.TabularInline):
     model=Choice
@@ -18,6 +17,8 @@ class QuestionAdmin(admin.ModelAdmin):
     inlines=[ChoiceInLine]
 
 admin.site.register(Questions,QuestionAdmin)
+admin.site.register(Musician)
+admin.site.register(Album)
 
 
 # Register your models here.

@@ -1,9 +1,10 @@
 from django.shortcuts import render
 
-from .models import Choice, Questions and Choice
+from django.http import HttpResponse
 
-def index(request):
-    return render(request, 'poll/sindex.html')
+def Album(request):
+    return HttpResponse()
+ 
     
 
 # Create your views here.
